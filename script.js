@@ -1,32 +1,49 @@
 // script.js
+
+// URL of the Render-hosted backend endpoint
+const API_URL = 'https://wkd-backend.onrender.com';
+
 const franchiseForm = document.getElementById('franchiseForm');
+const thankYouMessage = document.getElementById('thankYouMessage');
+
 franchiseForm.addEventListener('submit', function (e) {
   e.preventDefault();
-  const form = e.target;
 
-  // simulate form sending
-  setTimeout(() => {
-    form.reset();
-    document.getElementById('thankYouMessage').classList.remove('hidden');
-  }, 500);
+  // Prepare form data
+  const formData = new FormData(franchiseForm);
+
+  // Send to backend
+  fetch(API_URL, {
+    method: 'POST',
+    body: formData
+  })
+    .then(async res => {
+      const data = await res.json();
+      if (data.message) {
+        franchiseForm.reset();
+        thankYouMessage.classList.remove('hidden');
+      } else {
+        alert(data.error || 'حدث خطأ أثناء الإرسال');
+      }
+    })
+    .catch(err => {
+      console.error('Fetch error:', err);
+      alert('تعذر إرسال الطلب، حاول مرة أخرى لاحقًا.');
+    });
 });
 
 // scroll to thank you message
-const thankYou = document.getElementById('thankYouMessage');
 const observer = new MutationObserver(() => {
-  if (!thankYou.classList.contains('hidden')) {
-    thankYou.scrollIntoView({ behavior: 'smooth' });
+  if (!thankYouMessage.classList.contains('hidden')) {
+    thankYouMessage.scrollIntoView({ behavior: 'smooth' });
   }
 });
-observer.observe(thankYou, { attributes: true });
+observer.observe(thankYouMessage, { attributes: true });
 
 // Sequential animation for brand cards
 window.addEventListener('DOMContentLoaded', () => {
-  const elements = document.querySelectorAll('.brand-card');
-  elements.forEach((el, index) => {
-    setTimeout(() => {
-      el.classList.add('fade-in');
-    }, index * 200);
+  document.querySelectorAll('.brand-card').forEach((el, index) => {
+    setTimeout(() => el.classList.add('fade-in'), index * 200);
   });
 });
 
@@ -37,27 +54,21 @@ const modalDesc = document.getElementById('modalDesc');
 const modalImages = document.getElementById('modalImages');
 const closeBtn = document.querySelector('.modal-close');
 
-// Click on brand cards to open modal
 document.querySelectorAll('.brand-card').forEach(card => {
   card.addEventListener('click', () => {
-    // Set title and description
     modalTitle.innerText = card.querySelector('h3').innerText;
     modalDesc.innerText = card.querySelector('p').innerText;
-    
-    // Build image gallery, ensuring correct path
+
     const srcList = card.dataset.images.split(',').map(s => s.trim());
     modalImages.innerHTML = srcList.map(src => {
-      // If path starts with 'http' or 'images/', use as-is, otherwise prepend 'images/'
-      const url = src.match(/^(https?:)?\/\//) || src.startsWith('images/') ? src : `images/${src}`;
+      const url = src.startsWith('http') || src.startsWith('images/') ? src : `images/${src}`;
       return `<img src="${url}" alt="${modalTitle.innerText}">`;
     }).join('');
 
-    // Show modal
     modal.classList.remove('hidden');
   });
 });
 
-// Close modal on button click or outside click
 closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
 modal.addEventListener('click', e => {
   if (e.target === modal) modal.classList.add('hidden');
