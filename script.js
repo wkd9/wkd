@@ -16,6 +16,7 @@ franchiseForm.addEventListener('submit', async function (e) {
   submitButton.disabled = true;
 
   // عرض رسالة جارٍ الإرسال
+  thankYouMessage.classList.remove('hidden');
   thankYouMessage.style.display = "block";
   thankYouMessage.innerText = "🚀 جاري الإرسال...";
   thankYouMessage.style.backgroundColor = "#fff3cd"; // أصفر فاتح
