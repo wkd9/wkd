@@ -1,0 +1,274 @@
+/* styles.css */
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Tajawal', sans-serif;
+  background-color: #f9f9f9;
+  color: #ffffff;
+  direction: rtl;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Logo Banner */
+.logo-banner {
+  position: relative;
+  background-color: #03045e;
+  text-align: center;
+  padding: 20px 0;
+}
+.logo-banner img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+/* Language Switch Button */
+.lang-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #e79c24;
+  color: #03045e;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.lang-switch:hover {
+  background-color: #e79c24;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #03045e;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+.cta {
+  background-color: #e79c24;
+  color: #03045e;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+.cta:hover {
+  background-color: #e79c24;
+}
+
+/* Section Titles */
+.section {
+  background-color: #03045e;
+  padding: 40px 20px;
+  margin: 5px 0;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.section p {
+  font-size: 1.05rem;
+  color: #ffffff;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Brands Grid */
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+}
+.brand-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  opacity: 0;
+}
+.brand-card:hover {
+  transform: translateY(-5px);
+}
+.brand-card img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 15px;
+}
+.brand-card h3 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: #000000;
+}
+.brand-card p {
+  font-size: 1.05rem;
+  color: #000000;
+}
+
+/* Achievements List */
+.achievements-list {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  margin: auto;
+}
+.achievements-list li {
+  background-color: #f5f5f5;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  font-size: 1.05rem;
+  color: #000000;
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #03045e;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #ffffff;
+  font-size: 1.05rem;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+.contact-form button {
+  background-color: #e79c24;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.contact-form button:hover {
+  background-color: #e79c24;
+  box-shadow: 0 0 12px rgba(242, 133, 0, 0.6);
+}
+.hidden {
+  display: none;
+}
+
+/* Footer */
+.footer {
+  background-color: #03045e;
+  color: #eee;
+  text-align: center;
+  padding: 70px;
+  font-size: 0.95rem;
+}
+
+/* Modal Overlay */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal.hidden {
+  display: none;
+}
+
+/* محتوى النافذة */
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  width: auto;
+  position: relative;
+  text-align: center;
+  color: #333;
+}
+
+/* زر الإغلاق */
+.modal-close {
+  position: absolute;
+  top: 10px; right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* صور المودال */
+.modal-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.modal-images img {
+  width: 32%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .brands-grid { grid-template-columns: 1fr; }
+  .brand-card { padding: 20px; }
+  .brand-card h3 { font-size: 1.2rem; }
+  .brand-card img { width: 120px; }
+  .hero h1 { font-size: 2rem; }
+}
+@media (max-width: 600px) {
+  .nav a { display: block; margin: 10px 0; }
+}

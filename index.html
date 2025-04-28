@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مجموعة WKD</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- شعار بانر كامل العرض -->
+  <section class="logo-banner">
+    <img src="WKD.jpg" alt="شعار WKD" />
+    <a href="index-en.html" class="lang-switch">EN</a>
+  </section>
+
+  <!-- بانر التعريف -->
+  <section class="hero">
+    <div class="container">
+      <h1>نحو مستقبل واعد في ريادة الأعمال والامتياز التجاري</h1>
+      <a href="#contact" class="cta">قدّم طلب امتياز</a>
+    </div>
+  </section>
+
+  <!-- عن المجموعة -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>عن المجموعة</h2>
+      <p>
+        مجموعة WKD<br/>
+        مالكها ومديرها التنفيذي الأستاذ/ وائل بن خالد عبد القادر دقل خلال مدة 10 سنوات<br/>
+        كما أن المجموعة حاصلة على أمتياز تجاري (فلورينا) ولها حق المنح في المملكة العربية السعودية وحق الاستخدام<br/>
+        وحاصلة أيضًا على امتياز تجاري (mmmm) ولها حق المنح والاستخدام في المملكة العربية السعودية<br/>
+        وحاصلة أيضًا على امتياز تجاري (ريتشي) ولها حق الاستخدام في المدينة المنورة<br/>
+        إضافة إلى ذلك، فإن المدير التنفيذي للمجموعة الأستاذ/ وائل خالد دقل نائب رئيس لجنة الإمتياز التجاري في مجلس الغرف على مستوى المملكة وعضو تنفيذي في المجلس السعودي الكوري ورئيس لجنة ريادة الأعمال في الغرفة التجارية بالمدينة المنورة وعضو في اللجنة الوطنية لريادة الأعمال، إضافة إلى أنه شريك مستثمر في شركة Take off.<br/>
+        كما أنه من المساهمين الأساسين لوضع نظام الامتياز التجاري بالمملكة العربية السعودية بعد موافقة مجلس الشورى عليه في هيئة المنشآت الصغيرة والمتوسطة.<br/>
+        نطمح أن نكون من النائلين للإعجاب والاستحسان، ونأمل أن نكون من المساهمين معكم لإنشاء علاقات تجارية دائمة.
+      </p>
+    </div>
+  </section>
+
+  <!-- العلامات التجارية -->
+  <section id="brands" class="section">
+    <div class="container">
+      <h2>علاماتنا التجارية</h2>
+      <div class="brands-grid">
+        <div class="brand-card florina" data-images="florina1.jpg,florina2.jpg,florina3.jpg">
+          <img src="florina.jpg" alt="فلورينا" />
+          <h3>فرنشايز فلورينا</h3>
+          <p>متجر أحذية وحقائب فاخرة تتميز بجودتها وتم افتتاح عدد 15 فرعًا حول المملكة خلال سنة</p>
+        </div>
+        <div class="brand-card mmmm" data-images="mmmm1.jpg,mmmm2.jpg,mmmm3.jpg">
+          <img src="mmmm.jpg" alt="mmmm" />
+          <h3>mmmm</h3>
+          <p>مطعم عصري يقدم ألذ الوجبات الخفيفة، أطلق أول فرنشايز في المدينة المنورة وحقق نجاحًا سريعًا.</p>
+        </div>
+        <div class="brand-card ritchi" data-images="ritchi1.jpg,ritchi2.jpg,ritchi3.jpg">
+          <img src="richy.jpg" alt="ريتشي" />
+          <h3>ريتشي</h3>
+          <p>متجر أقمشة فاخرة مع خدمة التفصيل والتوصيل.</p>
+        </div>
+        <div class="brand-card willies" data-images="willies1.jpg,willies2.jpg,willies3.jpg">
+          <img src="willis.jpg" alt="ويليز" />
+          <h3>ويليز</h3>
+          <p>مقاهي شبابية حديثة في فرعي الأزهري وواحة العيون، توفر أجواءً مريحة وإبداعية.</p>
+        </div>
+        <div class="brand-card takaddum" data-images="takaddum1.jpg,takaddum2.jpg,takaddum3.jpg">
+          <img src="iad.jpg" alt="التقدم الذكي" />
+          <h3>التقدم الذكي</h3>
+          <p>تضم عدة مشاريع استثمارية مميزة، بما في ذلك مشروع واحة العيون لتأجير أكشاك الدرايف ثرو.</p>
+        </div>
+        <div class="brand-card takaddum" data-images="stable1.jpg,stable2.jpg,stable3.jpg">
+          <img src="stable.jpg" alt="مربط الجبل" />
+          <h3>مربط الجبل</h3>
+          <p>يتميز مربط الجبل بمساحته الكبيرة وميادين فروسية واسعة وتنوّع الأنشطة.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal للعلامات -->
+    <div id="brandModal" class="modal hidden">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div id="modalImages" class="modal-images"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الإنجازات -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2>الإنجازات</h2>
+      <ul class="achievements-list">
+        <li>تأسيس مطاعم ومقاهي ويليز فرع الأزهري وفرع واحة العيون</li>
+        <li>تأسيس فرنشايز مطعم mmmm في المدينة المنورة</li>
+        <li>تأسيس ميدان جبل المدينة للفروسية</li>
+        <li>تأسيس تسعة فروع من امتياز فلورينا في الرياض، ورنية، واملج، وبدر، وعفيف، وأبها</li>
+        <li>منح 15 فرع فرنشايز فلورينا</li>
+        <li>مؤسس امتياز ريتشي بالمدينة المنورة</li>
+        <li>مؤسس ميدان جبل المدينة للفروسية أحد اصطبلات الخيل الفاخرة بالمدينة المنورة</li>
+        <li>مشروع واحة العيون (تأجير درايف ثرو)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- طلب امتياز -->
+  <section id="contact" class="contact-form">
+    <div class="container">
+      <h2>قدم طلب امتياز تجاري</h2>
+      <form id="franchiseForm">
+        <label for="name">الاسم الكامل:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">رقم الجوال:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="city">المدينة:</label>
+        <input type="text" id="city" name="city" required />
+
+        <label for="brand">اختر العلامة التجارية:</label>
+        <select id="brand" name="brand" required>
+          <option value="فلورينا">فلورينا</option>
+          <option value="mmmm">mmmm</option>
+          <option value="ريتشي">ريتشي</option>
+          <option value="ويليز">ويليز</option>
+          <option value="التقدم الذكي">التقدم الذكي</option>
+          <option value="مربط الجبل">مربط الجبل</option>
+        </select>
+
+        <label for="message">تفاصيل إضافية:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <button type="submit">إرسال الطلب</button>
+      </form>
+      <p id="thankYouMessage" class="hidden">شكراً لاهتمامك! سنرد عليك قريباً.</p>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <div class="container">
+      <p>جميع الحقوق محفوظة &copy; 2025 مجموعة WKD</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WKD Group</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Logo Banner -->
+  <section class="logo-banner">
+    <img src="WKD.jpg" alt="WKD Logo" />
+    <a href="index.html" class="lang-switch">AR</a>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Towards a Promising Future in Entrepreneurship & Franchising</h1>
+      <a href="#contact" class="cta">Apply for Franchise</a>
+    </div>
+  </section>
+
+  <!-- About the Group -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About the Group</h2>
+      <p>
+        WKD Group, owned and led by Mr. Wael Khalid Abdul Qader Daqal for 10 years,<br/>
+        holds the franchise rights for Florina, MMMM, and Ritchi in Saudi Arabia.<br/>
+        Mr. Daqal serves as Vice-President of the Franchise Committee at the Saudi Chambers Council,<br/>
+        is an Executive Member of the Saudi-Korean Council, Chair of the Entrepreneurship Committee in<br/>
+        Madinah Chamber, and an investor partner in Take Off Company.<br/>
+        He also contributed to establishing the Saudi Franchise Law under the Small & Medium Enterprises Authority.<br/>
+        We aspire to earn your admiration and to build lasting business relationships with you.
+      </p>
+    </div>
+  </section>
+
+  <!-- Our Brands -->
+  <section id="brands" class="section">
+    <div class="container">
+      <h2>Our Brands</h2>
+      <div class="brands-grid">
+        <div class="brand-card florina" data-images="florina1.jpg,florina2.jpg,florina3.jpg">
+          <img src="florina.jpg" alt="Florina" />
+          <h3>Florina Franchise</h3>
+          <p>A luxury footwear & bag store, opened 15 branches across the Kingdom in one year.</p>
+        </div>
+        <div class="brand-card mmmm" data-images="mmmm1.jpg,mmmm2.jpg,mmmm3.jpg">
+          <img src="mmmm.jpg" alt="MMMM" />
+          <h3>MMMM</h3>
+          <p>A modern restaurant serving gourmet light meals—first franchise in Medina, with rapid success.</p>
+        </div>
+        <div class="brand-card ritchi" data-images="ritchi1.jpg,ritchi2.jpg,ritchi3.jpg">
+          <img src="richy.jpg" alt="Ritchi" />
+          <h3>Ritchi</h3>
+          <p>A luxury fabric store with bespoke tailoring and delivery services.</p>
+        </div>
+        <div class="brand-card willies" data-images="willies1.jpg,willies2.jpg,willies3.jpg">
+          <img src="willis.jpg" alt="Willies" />
+          <h3>Willies</h3>
+          <p>Youth-oriented cafes at Al-Azhari & Al-Oyoun Oasis, offering a comfortable creative atmosphere.</p>
+        </div>
+        <div class="brand-card takaddum" data-images="takaddum1.jpg,takaddum2.jpg,takaddum3.jpg">
+          <img src="iad.jpg" alt="Takaddum" />
+          <h3>Takaddum</h3>
+          <p>Features several standout investment projects, including the Al-Oyoun Oasis drive-thru.</p>
+        </div>
+        <div class="brand-card takaddum" data-images="stable1.jpg,stable2.jpg,stable3.jpg">
+          <img src="stable.jpg" alt="Mountain Stable" />
+          <h3>Mountain Stable</h3>
+          <p>A premium equestrian facility with expansive arenas and varied activities.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brand Details Modal -->
+    <div id="brandModal" class="modal hidden">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div id="modalImages" class="modal-images"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2>Achievements</h2>
+      <ul class="achievements-list">
+        <li>Established Willies cafes in Al-Azhari & Al-Oyoun Oasis</li>
+        <li>Launched the MMMM franchise in Medina</li>
+        <li>Founded the Medina Mountain Equestrian Field</li>
+        <li>Opened 9 Florina franchise branches in Riyadh, Ranyah, Umluj, Badr, Afif & Abha</li>
+        <li>Granted 15 Florina franchise branches</li>
+        <li>Founded the Ritchi franchise in Medina</li>
+        <li>Launched the Al-Oyoun Oasis drive-thru project</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Franchise Form -->
+  <section id="contact" class="contact-form">
+    <div class="container">
+      <h2>Apply for Franchise</h2>
+      <form id="franchiseForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required />
+
+        <label for="brand">Select Brand:</label>
+        <select id="brand" name="brand" required>
+          <option value="Florina">Florina</option>
+          <option value="MMMM">MMMM</option>
+          <option value="Ritchi">Ritchi</option>
+          <option value="Willies">Willies</option>
+          <option value="Takaddum">Takaddum</option>
+          <option value="Mountain Stable">Mountain Stable</option>
+        </select>
+
+        <label for="message">Additional Details:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <button type="submit">Submit Application</button>
+      </form>
+      <p id="thankYouMessage" class="hidden">Thank you for your interest! We will respond soon.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>All rights reserved &copy; 2025 WKD Group</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
