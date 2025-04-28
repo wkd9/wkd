@@ -1,7 +1,7 @@
 // script.js
 
 // URL of the Render-hosted backend endpoint
-const API_URL = 'https://wkd-backend.onrender.com';
+const API_URL = 'https://wkd-backend.onrender.com/send-email';
 
 const franchiseForm = document.getElementById('franchiseForm');
 const thankYouMessage = document.getElementById('thankYouMessage');
