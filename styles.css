@@ -252,6 +252,19 @@ body {
   border-radius: 4px;
 }
 
+.about-text p {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.about-list {
+  list-style: disc inside;
+  margin: 1rem 0;
+  text-align: left;
+}
+.about-list li {
+  margin-bottom: 0.5rem;
+}
+
 /* Animations */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }

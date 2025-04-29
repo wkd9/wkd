@@ -6,6 +6,25 @@
   <title>مجموعة WKD</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Override alignment for About section -->
+  <style>
+    .about-text {
+      text-align: right;
+      direction: rtl;
+      max-width: 800px;
+      margin: auto;
+    }
+    .about-text p,
+    .about-text .about-list {
+      text-align: right;
+      direction: rtl;
+    }
+    .about-list {
+      list-style-position: inside;
+      padding-right: 1.2em;
+      margin-top: 0.5rem;
+    }
+  </style>
 </head>
 <body>
   <!-- شعار بانر كامل العرض -->
@@ -26,19 +45,35 @@
   <section id="about" class="section">
     <div class="container">
       <h2>عن المجموعة</h2>
-      <p>
-        مجموعة WKD<br/>
-        مالكها ومديرها التنفيذي الأستاذ/ وائل بن خالد عبد القادر دقل خلال مدة 10 سنوات<br/>
-        كما أن المجموعة حاصلة على أمتياز تجاري (فلورينا) ولها حق المنح في المملكة العربية السعودية وحق الاستخدام<br/>
-        وحاصلة أيضًا على امتياز تجاري (mmmm) ولها حق المنح والاستخدام في المملكة العربية السعودية<br/>
-        وحاصلة أيضًا على امتياز تجاري (ريتشي) ولها حق الاستخدام في المدينة المنورة<br/>
-        إضافة إلى ذلك، فإن المدير التنفيذي للمجموعة الأستاذ/ وائل خالد دقل نائب رئيس لجنة الإمتياز التجاري في مجلس الغرف على مستوى المملكة وعضو تنفيذي في المجلس السعودي الكوري ورئيس لجنة ريادة الأعمال في الغرفة التجارية بالمدينة المنورة وعضو في اللجنة الوطنية لريادة الأعمال، إضافة إلى أنه شريك مستثمر في شركة Take off.<br/>
-        كما أنه من المساهمين الأساسين لوضع نظام الامتياز التجاري بالمملكة العربية السعودية بعد موافقة مجلس الشورى عليه في هيئة المنشآت الصغيرة والمتوسطة.<br/>
-        نطمح أن نكون من النائلين للإعجاب والاستحسان، ونأمل أن نكون من المساهمين معكم لإنشاء علاقات تجارية دائمة.
-      </p>
+      <div class="about-text">
+        <p>وائل الدقل هو شريك مؤسس ومالك علامة تجارية ومانح امتياز، حاصل على درجة البكالوريوس في الدراسات التجارية من جامعة Canterbury Chris church (المملكة المتحدة)، تلاها درجة الماجستير في التحكيم التجاري الدولي من المؤسسات البريطانية في مصر.</p>
+        <p>بالإضافة إلى مهامه الحالية، يعمل وائل الدقل أيضًا مستشارًا لنظام المنح في هيئة المنشآت الصغيرة والمتوسطة.</p>
+        <p>يحمل وايل حاليًا ثلاث تراخيص امتياز، اثنتان منها رخص امتياز رئيسية: الأولى من شركة فلورينا التي يمتد تاريخها إلى 50 عامًا وعدد فروعها أكثر من 140 فرعًا في جميع أنحاء المملكة العربية السعودية، والثانية من مطعم mmmm برغر. أما الترخيص الثالث فهو حصري في المدينة المنورة فقط من شركة ريتشي المختصة في الزي السعودي التي لها تاريخ طويل يمتد لأكثر من 60 عامًا.</p>
+        <p>الأدوار التنفيذية والعضويات:</p>
+        <ul class="about-list">
+          <li>عضو تنفيذي في المجلس السعودي الكوري للأعمال</li>
+          <li>نائب رئيس لجنة المنح في اتحاد الغرف التجارية السعودية</li>
+          <li>رئيس لجنة ريادة الأعمال في الغرفة التجارية</li>
+          <li>عضو اللجنة الوطنية لريادة الأعمال في اتحاد الغرف التجارية السعودية</li>
+        </ul>
+        <p>العلامات التجارية المملوكة:</p>
+        <ul class="about-list">
+          <li>شركة فلورينا</li>
+          <li>مطعم ويليز</li>
+          <li>مربط الجبل (مشروع خيول)</li>
+          <li>مشروع درايف ثرو (عقارات)</li>
+        </ul>
+        <p>مساهم في شركات دولية متخصصة في تصدير الشركات السعودية إلى الخارج:</p>
+        <ul class="about-list">
+          <li>الشركة البريطانية – Takeoff</li>
+          <li>الشركة الصينية – The Solution Bridge</li>
+          <li>شركة جنوب أفريقيا – SetupAZ</li>
+          <li>الشركة الكورية – Korea-In-Company</li>
+        </ul>
+      </div>
     </div>
   </section>
-
+  
   <!-- العلامات التجارية -->
   <section id="brands" class="section">
     <div class="container">
@@ -69,10 +104,30 @@
           <h3>التقدم الذكي</h3>
           <p>تضم عدة مشاريع استثمارية مميزة، بما في ذلك مشروع واحة العيون لتأجير أكشاك الدرايف ثرو.</p>
         </div>
-        <div class="brand-card takaddum" data-images="stable1.jpg,stable2.jpg,stable3.jpg">
+        <div class="brand-card stable" data-images="stable1.jpg,stable2.jpg,stable3.jpg">
           <img src="stable.jpg" alt="مربط الجبل" />
           <h3>مربط الجبل</h3>
           <p>يتميز مربط الجبل بمساحته الكبيرة وميادين فروسية واسعة وتنوّع الأنشطة.</p>
+        </div>
+        <div class="brand-card Takeoff" data-images="takeoff.jpg,takeoff.jpg,takeoff.jpg">
+          <img src="takeoff.jpg" alt=" تاك اوف" />
+          <h3> Takeoff </h3>
+          <p>تقدم خدمات استشارية متكاملة في تطوير الأعمال، إدارة المشاريع، والموارد البشرية، لدعم نمو الشركات ورفع كفاءتها التشغيلية في السوق السعودي</p>
+        </div>
+        <div class="brand-card The Solution Bridge" data-images="bridge.jpg,bridge.jpg,bridge.jpg">
+          <img src="bridge.jpg" alt="ذا سولوشون بريدج" />
+          <h3>The Solution Bridge</h3>
+          <p>ﺷﺮﻛﺔ ﺻﻴﻨﻴﺔ ﻣﺘﺨﺼﺼﺔ ﻓﻲ دﻋﻢ اﻟﻌﻼﻣﺎت اﻟﺘﺠﺎرﻳﺔ ﻣﻨﺬ أﻛﺜﺮ ﻣﻦ 14 ﺳﻨﺔ تﻌﻤﻞ ﺑﻴﻦ اﻟﺴﻌﻮدﻳﺔ واﻟﺼﻴﻦ ﻟﺘﻘﺪﻳﻢ ﺧﺪﻣﺎت ﻣﺘﻜﺎﻣﻠﺔ ﻟﺪﺧﻮل اﻟﺴﻮق اﻟﺼﻴﻨﻲ ﺑﺜﻘﺔ واﺣﺘﺮاﻓﻴﺔ</p>
+        </div>
+        <div class="brand-card SetupAZ" data-images="setupaz.jpg,setupaz.jpg,setupaz.jpg">
+          <img src="setupaz.jpg" alt="سيت اب از" />
+          <h3>SetupAZ</h3>
+          <p>تساعد الشركات الدولية على تأسيس أعمالها في جنوب أفريقيا من خلال خدمات شاملة تشمل التأسيس القانوني، التأشيرات، الضرائب، والامتثال التنظيمي كل ذلك بدعم محلي متخصص لضمان بداية ناجحة ومستدامة</p>
+        </div>
+        <div class="brand-card Korea in" data-images="korea.jpg,korea.jpg,korea.jpg">
+          <img src="korea.jpg" alt="كوريا ان" />
+          <h3>Koria In</h3>
+          <p>تساعد العلامات السعودية على دخول السوق الكوري بنجاح من خلال خدمات متكاملة مع دعم محلي متخصص لضمان توسع سلس ومستدام في كوريا الجنوبية</p>
         </div>
       </div>
     </div>
@@ -130,6 +185,10 @@
           <option value="ويليز">ويليز</option>
           <option value="التقدم الذكي">التقدم الذكي</option>
           <option value="مربط الجبل">مربط الجبل</option>
+          <option value="Takeoff">Takeoff</option>
+          <option value="The Solution Bridge">The Solution Bridge</option>
+          <option value="SetupAZ">SetupAZ</option>
+          <option value="Koria In">Koria In</option>
         </select>
 
         <label for="message">تفاصيل إضافية:</label>
